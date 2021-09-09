@@ -1,32 +1,6 @@
-import Grid from "./grid";
-
-import styled from "styled-components";
-
-const Container = styled.aside`
-  grid-area: asideLeft;
-  >div {
-    height: 100%;
-  }
-`;
-
-const AsideLinks = styled.ul`
-  flex-direction: column;
-`
-
-const Anchor = styled.a`
-  color: white;
-`
-
-const Section = styled.section`
-  height: 50vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-`
-
-const Li = styled.section`
-  padding: 10px 50px;
-`
+import Grid from "../grid";
+import { Container, Section, AsideLinks, Item, Anchor } from "./styles";
+import Button from "../button";
 
 function Sidebar({ data, handleClick }) {
   return (
@@ -35,7 +9,7 @@ function Sidebar({ data, handleClick }) {
         <Section>
           <AsideLinks>
             {data.map((item) => (
-              <Li key={item.id}>
+              <Item key={item.id}>
                 <Anchor
                   href={item.id}
                   onClick={(event) => {
@@ -45,7 +19,7 @@ function Sidebar({ data, handleClick }) {
                 >
                   {item.title}
                 </Anchor>
-              </Li>
+              </Item>
             ))}
           </AsideLinks>
         </Section>

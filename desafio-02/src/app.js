@@ -1,17 +1,15 @@
 import { createGlobalStyle } from "styled-components";
-import { GridLayout } from "./gridLayout";
+import { GridLayout } from "./components/gridLayout";
 
-import Header from "./header";
-import Menu from "./menu";
-import Sidebar from "./sidebar";
-import Main from "./main";
-import Footer from "./footer";
+import Header from "./components/header/header";
+import Menu from "./components/menu/menu";
+import Sidebar from "./components/sidebar/sidebar";
+import Main from "./components/main/main";
+import Footer from "./components/footer/footer";
 
 import { useState } from "react";
 
 const GlobalStyle = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
   * {
     margin: 0;
     padding: 0;
