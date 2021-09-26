@@ -5,4 +5,4 @@
 - [Desafio 07](https://github.com/dticed/markee-app/pull/5)
 - [Desafio 08](https://github.com/dticed/markee-app/pull/6)
 - [Desafio 09](https://github.com/dticed/markee-app/pull/8)
-- [Desafio 10](https://markee-dticed.netlify.app/) - 👈Live Code
+- [Desafio 10](https://markee-dticed.netlify.app/) - Netilify deploy
